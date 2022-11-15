@@ -1,0 +1,51 @@
+<div id="view-account-user-change-pw-first-login"></div>
+<h3 class="text-center my-5">Change Your Password</h3>
+
+<!-- buộc toàn bộ dòng và cột phải bỏ trong class container -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-5">
+      <div class="border p-3 rounded bg-light">
+        <form method="post" id="acc-change-password">
+          <div class="form-group">
+            <label for="pass">New Password</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-lock"></i>
+                </span>
+              </div>
+              <input
+                type="password"
+                name="newpass"
+                class="form-control"
+                placeholder="New Password"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pass">Confirm new Password</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-lock"></i>
+                </span>
+              </div>
+              <input
+                type="password"
+                name="renewpass"
+                class="form-control"
+                placeholder="New Password"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-success px-5" type="submit">Change now</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

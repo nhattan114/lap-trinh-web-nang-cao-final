@@ -1,0 +1,41 @@
+<div class="admin-section admin-section2">
+  <div class="admin-section-panel admin-section-panel4">
+
+    <section class="account-info-container">
+      <h1>Deposit Detail</h1>
+        <h3>{{data.username}}</h3>
+        <div class="account-container">
+      <table>
+            <tr>
+                <th>Mã giao dịch</th>
+                <td>{{data.id}}</td>
+            </tr>
+            <tr>
+                <th>Số điện thoại chuyển tiền</th>
+                <td>{{data.phone_sender}}</td>
+                <th>Số điện thoại nhận tiền</th>
+                <td>{{data.phone_receiver}}</td>
+            </tr>
+            <tr>
+                <th>Số tiền chuyển</th>
+                <td>{{data.value}}</td>
+                <th>Phí giao dịch</th>
+                <td>{{data.fee}}</td>
+            </tr>
+            <tr>
+                <th>Người chịu phí</th>
+                <td>{{data.feeperson}}</td>
+                <th>Ghi chú</th>
+                <td>{{data.note}}</td>
+            </tr>
+            <tr>
+                <th>Ngày chuyển tiền</th>
+                <td>{{data.date}}</td>
+                <th>Trạng thái</th>
+                {{{data.status}}}
+            </tr>
+      </table>
+      
+    </section>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<div id="view-admin-trans-history" style="display:none"></div>
+<div class="admin-section admin-section2">
+  <div class="admin-section-panel admin-section-panel4">
+    <div class="admin-panel-section-header">
+      <h2>Pending withdrawal that is over 5m</h2>
+      <select
+        name="type"
+        id="history-type"
+        style="margin-left: 1rem; padding: 10px"
+      >
+        <option value="0" selected>Select to see transaction of users</option>
+        <option value="1">Nạp tiền</option>
+        <option value="2">Rút tiền</option>
+        <option value="3">Chuyển tiền</option>
+        <option value="4">Nhận tiền</option>
+        <option value="5">Thanh toán dịch vụ</option>
+      </select>
+    </div>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr class="header">
+          <th>ID</th>
+          <th>Username</th>
+          <th>Số tiền</th>
+          <th>Thời gian thực hiện</th>
+          <th>Trạng thái</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody" class="p-3">
+        {{! Will be rendered by ajax }}
+        {{! <tr>
+          <th class="withdraw-id" scope="row">${withdraw.id}</th>
+          <td class="withdraw-username">${withdraw.username}</td>
+          <td class="withdraw-value">${withdraw.value}</td>
+          <td class="withdraw-fee">${withdraw.fee}</td>
+          <td class="withdraw-date">${withdraw.date}</td>
+          <td class="withdraw-note">${withdraw.note}</td>
+          <td>
+            <button class="btn btn-sm btn-success" data-approve="true">
+              <i class="fa-solid fa-check"></i>
+            </button>
+            <button class="btn btn-sm btn-danger" data-approve="false">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </td>
+        </tr> }}
+      </tbody>
+    </table>
+  </div>
+</div>

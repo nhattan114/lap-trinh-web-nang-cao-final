@@ -1,0 +1,36 @@
+  <div id="view-account-sendOpt"></div>
+  <h3 class="text-center my-5">OTP</h3>
+
+  <!-- buộc toàn bộ dòng và cột phải bỏ trong class container -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-5">
+        <div class="border p-3 rounded bg-light">
+          <form method="post" action="/users/account/resetpassword/sendOtpPost">
+            <div class="form-group">
+              <label for="pass">OTP</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+                <input type="text" name="otpcode" class="form-control" placeholder="OTP">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button class="btn btn-success px-5 w-100" type="submit">Confirm</button>
+            </div>
+            
+            
+          </form>
+          <form method="post" action="/users/account/resetpassword/resendOtpPost">
+              <div class="form-group">
+                <button class="btn btn-primary px-5 w-100" id="btnResendOTP" type="submit" >Resend OTP</button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>

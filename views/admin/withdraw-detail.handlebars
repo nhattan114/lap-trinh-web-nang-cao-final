@@ -1,0 +1,35 @@
+<div class="admin-section admin-section2">
+  <div class="admin-section-panel admin-section-panel4">
+
+    <section class="account-info-container">
+      <h1>Withdraw Detail</h1>
+        <h3>{{data.username}}</h3>
+        <div class="account-container">
+      <table>
+            <tr>
+                <th>Mã giao dịch</th>
+                <td>{{data.id}}</td>
+                <th>Số thẻ</th>
+                <td>{{data.card_number}}</td>
+            </tr>
+            <tr>
+                <th>Ngày rút tiền</th>
+                <td>{{data.date}}</td>
+                <th>Số tiền rút</th>
+                <td>{{data.value}}</td>
+            </tr>
+            <tr>
+                <th>Phí giao dịch</th>
+                <td>{{data.fee}}</td>
+                <th>Status</th>
+                {{{data.status}}}
+            </tr>
+            <tr>
+                <th>Ghi chú</th>
+                <td>{{data.note}}</td>
+            </tr>
+      </table>
+      
+    </section>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+<div id="view-exchange-recharge"></div>
+<h3 class="text-center my-5">Recharge</h3>
+<!-- buộc toàn bộ dòng và cột phải bỏ trong class container -->
+<div class="container w-50">
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-5">
+      <div class="border p-3 rounded bg-light">
+        <form method="post" id="form-recharge">
+          <div class="form-group">
+            <label for="card-number">Số thẻ</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              <input
+                id="card-number"
+                type="text"
+                name="card-number"
+                class="form-control"
+                placeholder="Credit card number"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="expire-date">Ngày hết hạn</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              <input
+                id="expire-date"
+                type="date"
+                name="expire-date"
+                class="form-control"
+                placeholder="Expire date of credit card"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              <input
+                id="cvv"
+                type="number"
+                name="cvv"
+                class="form-control"
+                placeholder="CVV"
+              />
+            </div>
+
+          </div>
+          <div class="form-group">
+            <label for="amount">Số tiền nạp</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              <input
+                id="amount"
+                type="number"
+                name="amount"
+                class="form-control"
+                placeholder="Recharge amount"
+              />
+            </div>
+
+          </div>
+
+          <div class="form-group" id="my-alert">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-success px-5" type="submit">Recharge now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

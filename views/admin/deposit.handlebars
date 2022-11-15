@@ -1,0 +1,53 @@
+<div class="admin-section admin-section2">
+  <div class="admin-section-panel admin-section-panel4">
+    <div class="admin-panel-section-header">
+      <h2>List Deposit money bigger than 5m</h2>
+    </div>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr class="header">
+          <th>ID</th>
+          <th>Phone Sender</th>
+          <th>Phone Receiver</th>
+          <th>Value</th>
+          {{! <th>Status</th> }}
+          <th>Date Deposit</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody" class="p-3">
+        {{#each data}}
+          <tr class="item">
+            <th scope="row">{{id}}</th>
+            <td>{{phone_sender}}</td>
+            <td>{{phone_receiver}}</td>
+            <td>{{note}}</td>
+            {{!-- {{#if status}}
+            <td class="text-secondary font-weight-bold"><i class="fas fa-circle-notch fa-spin"></i></td>
+            {{else}}
+            <td class="text-success font-weight-bold"><i class="fa fa-check "></i></td>
+            {{/if}} --}}
+            <td>{{date}}</td>
+            <td>
+              <a href="/admin/deposit/{{id}}" class="btn btn-primary">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+              <button
+                class="btn btn-success"
+                onclick="checkClick('{{id}}','{{phone_sender}}','{{phone_receiver}}','{{value}}','{{fee}}','{{feeperson}}')"
+                id="checkbtn"
+                type="submit"
+              ><i class="fa-solid fa-check"></i></button>
+              <button
+                class="btn btn-danger"
+                onclick="rejectClick('{{id}}')"
+                type="submit"
+              ><i class="fa-solid fa-xmark"></i></button>
+
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
